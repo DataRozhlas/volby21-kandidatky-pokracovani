@@ -1,38 +1,34 @@
-title: "Data z mobilů:<br>Praha se denně nafoukne o polovinu, v centru jsou návštěvníci v převaze"
-perex: "Skoro 140 tisíc lidí přijede do Prahy každý den za prací. Míří hlavně do kancelářských budov a do centra města. S nimi pak dorazí i přes půl milionu návštěvníků. Ukázala to analýza dat o pohybu mobilních telefonů, kterou si nyní město nechává zpracovat."
-coverimg: https://interaktivni.rozhlas.cz/brexit/media/cover.jpg
+title: "Do sněmovny chce 5260 lidí. Vyberte si mezi nimi v přehledné interaktivní aplikaci"
+perex: "Za koho a kde kandiduje nejvíc žen, vysokoškoláků nebo obyvatel malých obcí? Jak se ve vašem kraji změnila kandidátní listina strany, pro kterou jste hlasovali posledně? Proklikejte si sněmovní kandidátky v aplikaci serveru iROZHLAS.cz."
 coverimg_note: "Foto <a href='https://ctk.cz'>ČTK</a>"
-styles: []
+styles: ["https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap"]
 libraries: [] #jquery, d3, highcharts, datatables
-options: [noheader] #wide, noheader (, nopic)
+options: [noheader, nopic] #wide, noheader (, nopic)
+
 ---
-<left>
-	<p>
-	<b>KAREL HYNEK MÁCHA</b>
-	</p><p>
-	Karel Hynek Mácha (16. listopadu 1810 Praha-Malá Strana[1] – 6. listopadu 1836 Litoměřice[2]) byl český básník a prozaik, představitel českého romantismu a zakladatel moderní české poezie. Proslavil se jak svým životem, tak dílem, jemuž dominuje Máj (1836).
-	</p>
-</left>
 
-Během dne se lidé v Praze soustřeďují v okolí administrativních center a obchodů, po poledni se tak nejvíc zahustí okolí Andělu, centrum Prahy (Vodičkova ulice a Petrské náměstí) a Brumlovka nedaleko Budějovické. Na poslední jmenované adrese sídlí řada velkých korporací, mezi nimi i Microsoft nebo ČEZ. Pro srovnání, na zmíněných místech je ve "špičce" okolo šesti stovek osob na jeden hektar, průměr Prahy je 25 obyvatel na [hektar](https://cs.wikipedia.org/wiki/Hektar) (Václavské náměstí má rozlohu asi 4 hektary).
+<wide><div id="app"></div></wide>
 
-Naopak v noci se nejvíc lidí se "namačká" ve Vršovicích, jde o 430 osob na hektar.
+**Výchozí nastavení** ukazuje všechny kandidáty pro říjnové sněmovní volby na jedné hromadě, s barevně odlišenými kandidátními listinami.
 
-Detaily si můžete prohlédnout v následující mapě, kterou z dat mobilních operátorů zpracoval pražský [Institut plánování a rozvoje](http://www.iprpraha.cz/).
+**Horním filtrem** vyberete buď celou politickou scénu, konkrétní uskupení nebo kraj. Můžete také oba filtry spojit a prohlédnout si krajské kandidátky – přesně ty, jaké dostanete v obálce.
 
-<wide><i>Pokud vás zajímá, "kolik" lidí bývá ve dne a v noci ve vaší čtvrti, najděte si ji na mapě, přepněte se na časové řezy, vyberte přepínač hustota osob a potom pohybujte "posuvníkem" nahoře.</i></wide>
+U koalic si pak ještě můžete vyfiltrovat jednu z koaličních stran. **Volební rok** nabízí pohled do minulosti až k volbám v roce 2006.
 
-## Data na prodej
-<right>
-	<p>
-	<b>KAREL HYNEK MÁCHA</b>
-	</p><p>
-	Karel Hynek Mácha (16. listopadu 1810 Praha-Malá Strana[1] – 6. listopadu 1836 Litoměřice[2]) byl český básník a prozaik, představitel českého romantismu a zakladatel moderní české poezie. Proslavil se jak svým životem, tak dílem, jemuž dominuje Máj (1836).
-	</p>
-</right>
+_Příklad: Chci se podívat na kandidátku zvažované strany ve svém kraji. Obojí vyberu v horním menu. Přepínáním volebního roku se můžu podívat na změny na kandidátce._
 
-I pokud netelefonujeme nebo neposíláme SMS, telefon pravidelně komunikuje s vysílači v síti mobilního operátora. Z dat o síle signálu a použité anténě je možné odvodit, kde se přibližně telefon nachází a jak dlouhou dobu na místě strávil.
+**Bočním filtrem** pak můžete přidat podrobnější charakteristiky lidí na kandidátkách: pohlaví, věk, vzdělání, pořadí na kandidátce nebo velikost obce.
 
-Mobilní operátor má ["zákonnou povinnost"](https://www.zakonyprolidi.cz/cs/2005-127/zneni-20160919#p97-3) takové informace uchovávat, a to půl roku do minulosti, přistupovat k nim ale mohou jen bezpečnostní složky, typicky policie nebo rozvědka.
+_Příklad: Chci zjistit, kdo jsou lídři kandidátek. V bočním menu vyberu pouze první pozici._
 
-Operátoři ale obdobné informace mohou anonymizovat (tedy "zbavit" identifikace konkrétního uživatele) a agregovat, tedy spojit informace o jednotlivcích do jakýchsi skupin. Výsledná obecná čísla pak přeprodávají dál, například marketingovým firmám či dopravním analytikům. Zpětně z nich nejde dovodit, kde se pohybuje každý jednotlivec, dávají ale určitý přehled o obecném chování obyvatel nějakého místa.
+**Graf** ukazuje všechny kandidáty vybrané v horním filtru. Počet kandidátů „zabalený“ do jedné kuličky se mění podle jejich počtu ve výběru, pozice v grafu nehraje roli. Pokud jste vybrali některé kategorie v bočním filtru, v grafu jsou barevně zvýrazněné, popisek informuje o přesném počtu a podílu.
+
+Kombinací obou filtrů můžete zkoumat složitější otázky, graf prozradí odpověď.
+
+_Příklad: Zajímá mě, kolik letos za vybrané politické strany kandiduje žen. V bočním filtru vyberu pouze ženy, v horním filtru přepínám mezi uskupeními, která mě zajímají. Otázku můžu dál rozšířit například na ženy na prvním místě kandidátek (POŘADÍ NA KANDIDÁTCE v bočním filtru) nebo historii zastoupení žen (ROK v horním filtru)._
+
+**Tabulka kandidátů** se mění zároveň s vaším výběrem. V původním nastavení ukazuje všech 5260 letošních kandidátů a kandidátek. Při výběru konkrétního uskupení a kraje kopíruje papírovou listinu, kterou dostanete do schránky. Tu můžete seřadit podle libovolného sloupce, některé jako jméno nebo povolání umožňují ještě podrobnější filtrování.
+
+_Příklad: Chci se podívat, jak se změnila kandidátní listina strany, kterou jsem volil minule. Kdo kandiduje znovu, kdo nově, kdo zmizel. V horním filtru vyberu svou stranu a kraj. Přepínáním mezi roky 2021 a 2017 můžu v tabulce sledovat konkrétní jména._
+
+Tak buďte, prosím, kreativní.

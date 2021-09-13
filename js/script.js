@@ -1,10 +1,10 @@
-﻿import "./byeie"; // loučíme se s IE
+﻿//import "preact/debug";
+//import { h, render } from "preact";
+import React from "react";
+import ReactDOM from "react-dom";
+import regeneratorRuntime from "regenerator-runtime";
+import App from "./App.jsx";
+import "./byeie"; // loučíme se s IE
 
-/*
-// snadné načtení souboru pro každého!
-fetch("https://blabla.cz/blabla.json")
-  .then(response => response.json()) // nebo .text(), když to není json
-  .then(data => {
-    // tady jde provést s daty cokoliv
-  });
-*/
+//render(<App />, document.getElementById("app"));
+ReactDOM.render(<App />, document.getElementById("app"));
